@@ -1,0 +1,14 @@
+{
+  "name": "updated-portfolio-site",
+  "version": "1.0.0",
+  "description": "My new and updated portfolio site",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jake Buhite",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
