@@ -12,20 +12,47 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <!-- Nav -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a class="active" href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="container">
+    <!-- Nav -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-  <!-- Content -->
-  <main></main>
+    <!-- Content -->
+    <main>
+      <h1 class="subheading">Contact</h1>
+      <form>
+        <div class="row">
+          <div class="u-full-width">
+            <label for="formFullName">Your Name</label>
+            <input class="u-full-width" type="text" placeholder="John Doe" id="formFullName">
+          </div>
+          <div class="u-full-width">
+            <label for="formEmail">Your Email</label>
+            <input class="u-full-width" type="email" placeholder="123@example.com" id="formEmail">
+          </div>
+          <div class="u-full-width">
+            <label for="reasonForContact">Reason for Contacting</label>
+            <select class="u-full-width" id="reasonForContact">
+              <option value="Option 1">Question</option>
+              <option value="Option 2">Inquiry</option>
+              <option value="Option 2">Suggestion/Feedback</option>
+              <option value="Option 3">Other</option>
+            </select>
+          </div>
+        </div>
+        <label for="formMsg">Message</label>
+        <textarea class="u-full-width" placeholder="Enter Message…" id="formMsg"></textarea>
+        <input class="button-primary" type="submit" value="Send Message">
+      </form>
+    </main>
 
-  <!-- Footer -->
-  <footer>Jake Buhite, 2022<br> <a href="https://github.com/jakebuhite/updated-portfolio-site">View Github</a></footer>
+    <!-- Footer -->
+    <footer>Jake Buhite, 2022<br> <a href="https://github.com/jakebuhite/updated-portfolio-site">View Github</a></footer>
+  </div>
 </body>
 </html>

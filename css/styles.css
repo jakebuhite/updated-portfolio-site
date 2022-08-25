@@ -27,7 +27,7 @@ ul li a {
     text-decoration: none;
 }
 nav ul li a {
-    border-bottom: 2px solid #0FA0CE;
+    border-bottom: 2px solid #a132f0;
 }
 .container main {
     display: flex;
@@ -35,13 +35,13 @@ nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 75px;
+    margin-bottom: 85px;
 }
 .container footer {
     flex: 0 1 40px; /* End of page */
 }
 footer {
-    border-top: 4px solid #0FA0CE;
+    border-top: 4px solid #a132f0;
     bottom: 0;
     left: 0;
     padding: 10px;
@@ -59,9 +59,20 @@ footer a {
 }
 .heading {
     font-size: 180px;
+    margin-bottom: 5px;
     font-weight: 400;
 }
 .subheading {
     font-size: 72px;
     font-weight: 400;
+}
+form input, select, textarea {
+    color: black;
+}
+.sm-icon {
+    filter: grayscale(100%);
+    transition: filter 1s;
+}
+.sm-icon:hover {
+    filter: none;
 }
