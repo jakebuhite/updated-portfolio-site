@@ -12,19 +12,47 @@
   <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <body>
+  <div class="container">
   <!-- Nav -->
   <nav>
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="/projects">Projects</a></li>
+      <li><a class="active" href="/projects">Projects</a></li>
       <li><a href="/contact">Contact</a></li>
     </ul>
   </nav>
 
   <!-- Content -->
-  <main></main>
+  <main>
+    <h1 class="subheading">Projects</h1>
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Language</th>
+          <th>Last modified</th>
+          <th>Created at</th>
+          <th>Size (kb)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for (let repo of data) { %>
+        <tr>
+          <td><a href="<%=repo.html_url%>" target="_blank"><%=repo.name%></a></td>
+          <td><%=repo.description%></td>
+          <td><%=repo.language%></td>
+          <td><%=repo.updated_at.substring(0, 10)%></td>
+          <td><%=repo.created_at.substring(0, 10)%></td>
+          <td><%=repo.size%></td>
+        </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </main>
 
   <!-- Footer -->
   <footer>Jake Buhite, 2022<br> <a href="https://github.com/jakebuhite/updated-portfolio-site" target="_blank">View Github</a></footer>
+  </div>
 </body>
 </html>

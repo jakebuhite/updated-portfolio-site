@@ -395,6 +395,19 @@ hr {
   clear: both; }
 
 
+/* Custom Additions 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.heading {
+  font-size: 72px;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+.subheading {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
@@ -406,16 +419,31 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+  .heading { font-size: 72px; }
+  .subheading { font-size: 36px; }
+}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+  .heading { font-size: 86px; }
+  .subheading { font-size: 48px; }
+}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+  .heading { font-size: 116px; }
+  .subheading { font-size: 56px; }
+}
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+  .heading { font-size: 152px; }
+  .subheading { font-size: 64px; }
+}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  .heading { font-size: 180px; }
+  .subheading { font-size: 72px; }
+}
