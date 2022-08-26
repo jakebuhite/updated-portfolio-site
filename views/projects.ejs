@@ -39,12 +39,12 @@
       <tbody>
         <% for (let repo of data) { %>
         <tr>
-          <td><a href="<%=repo.html_url%>" target="_blank"><%=repo.name%></a></td>
-          <td><%=repo.description%></td>
-          <td><%=repo.language%></td>
-          <td><%=repo.updated_at.substring(0, 10)%></td>
-          <td><%=repo.created_at.substring(0, 10)%></td>
-          <td><%=repo.size%></td>
+          <td data-label="Name"><a href="<%=repo.html_url%>" target="_blank"><%=repo.name%></a></td>
+          <td data-label="Description"><%=repo.description%></td>
+          <td data-label="Language"><%=repo.language%></td>
+          <td data-label="Last Modified"><%=repo.updated_at.substring(0, 10)%></td>
+          <td data-label="Created at"><%=repo.created_at.substring(0, 10)%></td>
+          <td data-label="Size (kb)"><%=repo.size%></td>
         </tr>
         <% } %>
       </tbody>
